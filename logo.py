@@ -2,7 +2,7 @@ import collections
 scale = 128
 stroke_width = 48
 Point = collections.namedtuple('Point', ['x', 'y'])
-origin = Point(0, 128)
+origin = Point(0, stroke_width/2)
 
 backwards_s = ' '.join([
     f'M{origin.x},{origin.y}',
@@ -18,7 +18,10 @@ path_d = f'{backwards_s} {vertical_line}'
 
 
 svg = f'''<?xml version="1.0" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" version="1.1">
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 {3*scale + stroke_width} {4*scale + stroke_width}"
+        version="1.1">
     <title>PC</title>
     <desc>PC logo</desc>
     <path d="{path_d}" fill="none" stroke="black" stroke-width="{stroke_width}"/>
