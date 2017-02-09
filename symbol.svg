@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1" style="display:none">
+    <symbol id="pcattori-logo" viewBox="0 0 432 560">
+        <path d="M0,24.0 l 280.0,0 a128,128 0 0,1 0,256 l -128,0 a128,128 0 0,0 0,256 l 280.0,0 M0,24.0 m216.0,128 l 0,256" fill="none" stroke="black" stroke-width="48"/>
+    </symbol>
+</svg>
+
